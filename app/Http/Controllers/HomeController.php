@@ -24,17 +24,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $banners = Banner::query()->where(["is_active" => 1, "type" => 1])->get();
-        $others = Banner::query()->where(["is_active" => 1, "type" => 2])->get();
-        $tmpAbout = Information::where(['type' => 'ABOUT'])->get()->toArray();
-        $about = [];
-        foreach ($tmpAbout as $item) {
-            $about[$item['label']] = $item['value'];
-        }
+//        $banners = Banner::query()->where(["is_active" => 1, "type" => 1])->get();
+//        $others = Banner::query()->where(["is_active" => 1, "type" => 2])->get();
+//        $tmpAbout = Information::where(['type' => 'ABOUT'])->get()->toArray();
+//        $about = [];
+//        foreach ($tmpAbout as $item) {
+//            $about[$item['label']] = $item['value'];
+//        }
         return view('home', [
-            "banners" => ($banners->count() > 0) ? $banners->toArray() : [],
-            "others" => ($others->count() > 0) ? $others->toArray() : [],
-            "homeAbout" => $about
+//            "banners" => ($banners->count() > 0) ? $banners->toArray() : [],
+//            "others" => ($others->count() > 0) ? $others->toArray() : [],
+//            "homeAbout" => $about
         ]);
     }
 
