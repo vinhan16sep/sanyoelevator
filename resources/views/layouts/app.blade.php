@@ -75,8 +75,8 @@
 
 	</head>
 	<body data-rsssl="1" class="home page-template-default page page-id-11 post-name-home post-type-page bootstrap4 fa_v6_css device-pc cookies-not-set">
-        <a class="skip-link screen-reader-text" href="#main">Chuyển đến nội dung</a>
-        <a class="skip-link screen-reader-text" href="#vk-mobile-nav">Chuyển đến điều hướng</a>
+        <a class="skip-link screen-reader-text" href="#main">Move</a>
+        <a class="skip-link screen-reader-text" href="#vk-mobile-nav">Navigate</a>
 
         @include('layouts.header')
 

@@ -12,7 +12,7 @@
         <div id="gMenu_outer" class="gMenu_outer">
             <nav class="menu-main_menu-container">
                 <ul id="menu-main_menu" class="menu gMenu vk-menu-acc vk-menu-acc-active">
-                    <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item"><a href=""><strong class="gMenu_name">Trang chu</strong></a></li>
+                    <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item"><a href=""><strong class="gMenu_name">{{ __("Home") }}</strong></a></li>
                     <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
                         <a href="introduction/"><strong class="gMenu_name">Giơi thiệu sản phẩm</strong></a>
                         <span class="acc-btn acc-btn-open"></span>
@@ -35,20 +35,20 @@
                     <li class="menu-item menu-item-gtranslate menu-item-has-children notranslate">
                         <a href="#" data-gt-lang="ja" class="gt-current-wrapper notranslate glink nturl gt_raw_link-xxjexk">
                             <img src="{{ asset('assets/images/ja.svg') }}" width="24" height="24" alt="ja" loading="lazy" data-src="wp-content/plugins/gtranslate/flags/svg/ja.svg" decoding="async" class=" lazyloaded" data-eio-rwidth="24" data-eio-rheight="24">
-                            <span>Tiếng Nhật</span>
+                            <span>{{ __("Japanese") }}</span>
                         </a>
                         <span class="acc-btn acc-btn-open"></span>
                         <ul class="dropdown-menu sub-menu acc-child-close">
                             <li class="menu-item menu-item-gtranslate-child">
                                 <a href="#" data-gt-lang="ja" class="gt-current-lang notranslate glink nturl gt_raw_link-xxjexk">
                                     <img src="{{ asset('assets/images/ja.svg') }}" width="24" height="24" alt="ja" loading="lazy" data-src="wp-content/plugins/gtranslate/flags/svg/ja.svg" decoding="async" class=" ls-is-cached lazyloaded" data-eio-rwidth="24" data-eio-rheight="24">
-                                    <span>Tiếng Nhật</span>
+                                    <span>{{ __("Japanese") }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-gtranslate-child">
                                 <a href="#" data-gt-lang="en" class="notranslate glink nturl gt_raw_link-xxjexk">
                                     <img src="{{ asset('assets/images/en-us.svg') }}" width="24" height="24" alt="en" loading="lazy" data-src="wp-content/plugins/gtranslate/flags/svg/en-us.svg" decoding="async" class=" lazyloaded" data-eio-rwidth="24" data-eio-rheight="24">
-                                    <span>English</span>
+                                    <span>{{ __("English") }}</span>
                                 </a>
                             </li>
                         </ul>

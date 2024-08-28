@@ -73,8 +73,8 @@
                                 </div>
                             </section>
                             <section class="fadein">
-                                <h1 class="text_c">Nội dung kinh doanh</h1>
-                                <p class="title_sub">Business details</p>
+                                <h1 class="text_c">{{ __("Business Contents") }}</h1>
+                                <p class="title_sub">{{ __("Business details") }}</p>
                                 <ul class="business">
                                     <li>
                                         <div class="circle">
