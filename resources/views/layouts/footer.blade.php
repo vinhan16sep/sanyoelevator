@@ -66,13 +66,13 @@
                 <span class="acc-btn acc-btn-open"></span>
                 <ul class="dropdown-menu sub-menu acc-child-close">
                     <li class="menu-item menu-item-gtranslate-child">
-                        <a href="#" data-gt-lang="ja" class="gt-current-lang notranslate glink nturl gt_raw_link-xxjexk" title="Japanese">
+                        <a href="{{ route('set-language', ['locale' => 'jp']) }}" class="gt-current-lang notranslate glink nturl gt_raw_link-xxjexk" title="Japanese">
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAQAAAADIDABVAAAAAnRSTlMAAHaTzTgAAAALSURBVAgdY6AxAAAAYAAB+t3a4gAAAABJRU5ErkJggg==" width="24" height="24" alt="ja" loading="lazy" data-src="wp-content/plugins/gtranslate/flags/svg/ja.svg" decoding="async" class="lazyload" data-eio-rwidth="24" data-eio-rheight="24">
                             <span>Japanese</span>
                         </a>
                     </li>
                     <li class="menu-item menu-item-gtranslate-child">
-                        <a href="#" data-gt-lang="en" class="notranslate glink nturl gt_raw_link-xxjexk" title="English">
+                        <a href="{{ route('set-language', ['locale' => 'en']) }}" class="notranslate glink nturl gt_raw_link-xxjexk" title="English">
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAQAAAADIDABVAAAAAnRSTlMAAHaTzTgAAAALSURBVAgdY6AxAAAAYAAB+t3a4gAAAABJRU5ErkJggg==" width="24" height="24" alt="en" loading="lazy" data-src="wp-content/plugins/gtranslate/flags/svg/en-us.svg" decoding="async" class="lazyload" data-eio-rwidth="24" data-eio-rheight="24">
                             <span>English</span>
                         </a>

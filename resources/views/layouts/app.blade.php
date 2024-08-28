@@ -121,15 +121,8 @@
         <script type="text/javascript" src="{{ asset('assets/js/jquery.touchwipe.min.js') }}" id="wp-jquery-lightbox-swipe-js"></script>
         <script type="text/javascript" src="{{ asset('assets/js/panzoom.min.js') }}" id="wp-jquery-lightbox-panzoom-js"></script>
         <script type="text/javascript" src="{{ asset('assets/js/jquery.lightbox.js') }}" id="wp-jquery-lightbox-js"></script>
-        <script src="{{ asset('assets/js/base.js') }}" data-no-optimize="1" data-no-minify="1" defer=""></script>
 
         @include('components.social')
-
-        <div>
-            <!-- GTranslate: https://gtranslate.com -->
-            <div id="google_translate_element2"></div>
-        </div>
-        <script src="{{ asset('assets/js/vi.js') }}"></script>
 
 		@yield('script')
     </body>
