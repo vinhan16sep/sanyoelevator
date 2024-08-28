@@ -59,5 +59,8 @@
     "There was an error sending your message": "メッセージの送信中にエラーが発生しました.",
     "Please enter your first and last name": "姓名を入力してください",
     "Please enter email address": "メールアドレスを入力してください",
-    "Please enter a valid email address": "有効なメールアドレスを入力してください"
+    "Please enter a valid email address": "有効なメールアドレスを入力してください",
+
+    "Business Contents": "事業内容",
+    "Business details": "Business details"
 }

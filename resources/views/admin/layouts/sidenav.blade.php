@@ -22,6 +22,8 @@
                     </ul>
                 </li>
                 <li><a href="{{ route('list-part') }}"><i class="ti-list"></i>Parts</a></li>
+                <li><a href="{{ route('list-business') }}"><i class="ti-list"></i>Business</a></li>
+                <li><a href="{{ route('list-strength') }}"><i class="ti-list"></i>Strength</a></li>
                 <li><a class="sidebar-sub-toggle"><i class="ti-list"></i> Projects <span
                             class="sidebar-collapse-icon ti-angle-down"></span></a>
                     <ul>

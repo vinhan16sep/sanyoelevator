@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\BannerController;
+use App\Http\Controllers\Admin\BusinessController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\InformationController;
 use App\Http\Controllers\Admin\PartController;
@@ -10,6 +11,7 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\PostTaskController;
 use App\Http\Controllers\Admin\ProjectCategoryController;
 use App\Http\Controllers\Admin\ProjectController;
+use App\Http\Controllers\Admin\StrengthController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -104,6 +106,29 @@ Route::group(['prefix' => 'fe-admin', 'middleware' => 'auth'], function () {
             Route::get('delete-row', [ProductController::class, 'delete'])->name('delete-product');
             Route::get('change-status', [ProductController::class, 'changeStatus'])->name('change-product-status');
         });
+
+        // Business
+        Route::group(['prefix' => 'business'], function () {
+            Route::get('/', [BusinessController::class, 'index'])->name('list-business');
+            Route::get('create', [BusinessController::class, 'create'])->name('create-business');
+            Route::post('store', [BusinessController::class, 'store'])->name('store-business');
+            Route::get('edit/{id}', [BusinessController::class, 'edit'])->name('edit-business');
+            Route::put('update/{id}', [BusinessController::class, 'update'])->name('update-business');
+            Route::get('delete-row', [BusinessController::class, 'delete'])->name('delete-business');
+            Route::get('change-status', [BusinessController::class, 'changeStatus'])->name('change-business-status');
+        });
+
+        // Strength
+        Route::group(['prefix' => 'strength'], function () {
+            Route::get('/', [StrengthController::class, 'index'])->name('list-strength');
+            Route::get('create', [StrengthController::class, 'create'])->name('create-strength');
+            Route::post('store', [StrengthController::class, 'store'])->name('store-strength');
+            Route::get('edit/{id}', [StrengthController::class, 'edit'])->name('edit-strength');
+            Route::put('update/{id}', [StrengthController::class, 'update'])->name('update-strength');
+            Route::get('delete-row', [StrengthController::class, 'delete'])->name('delete-strength');
+            Route::get('change-status', [StrengthController::class, 'changeStatus'])->name('change-strength-status');
+        });
+
 
         // Part
         Route::group(['prefix' => 'part'], function () {

@@ -59,5 +59,8 @@
     "There was an error sending your message": "There was an error sending your message.",
     "Please enter your first and last name": "Please enter your first and last name",
     "Please enter email address": "Please enter email address",
-    "Please enter a valid email address": "Please enter a valid email address"
+    "Please enter a valid email address": "Please enter a valid email address",
+
+    "Business Contents": "Business Contents",
+    "Business details": "Business details"
 }
