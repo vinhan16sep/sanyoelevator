@@ -33,21 +33,21 @@
                     </li>
                     <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="contact_us/"><strong class="gMenu_name">Lien he</strong></a></li>
                     <li class="menu-item menu-item-gtranslate menu-item-has-children notranslate">
-                        <a href="#" data-gt-lang="ja" class="gt-current-wrapper notranslate glink nturl gt_raw_link-xxjexk">
-                            <img src="{{ asset('assets/images/ja.svg') }}" width="24" height="24" alt="ja" loading="lazy" data-src="wp-content/plugins/gtranslate/flags/svg/ja.svg" decoding="async" class=" lazyloaded" data-eio-rwidth="24" data-eio-rheight="24">
-                            <span>{{ __("Japanese") }}</span>
+                        <a href="#" class="gt-current-wrapper notranslate glink nturl gt_raw_link-xxjexk">
+                            <img src="{{ app()->getLocale() == 'jp' ? asset('assets/images/ja.svg') : asset('assets/images/en-us.svg') }}" width="24" height="24" loading="lazy" decoding="async" class=" lazyloaded" data-eio-rwidth="24" data-eio-rheight="24">
+                            <span>{{ app()->getLocale() == 'jp' ? __("Japanese") : __("English") }}</span>
                         </a>
                         <span class="acc-btn acc-btn-open"></span>
                         <ul class="dropdown-menu sub-menu acc-child-close">
                             <li class="menu-item menu-item-gtranslate-child">
-                                <a href="{{ route('set-language', ['locale' => 'jp']) }}" data-gt-lang="ja" class="gt-current-lang notranslate glink nturl gt_raw_link-xxjexk">
-                                    <img src="{{ asset('assets/images/ja.svg') }}" width="24" height="24" alt="ja" loading="lazy" data-src="wp-content/plugins/gtranslate/flags/svg/ja.svg" decoding="async" class=" ls-is-cached lazyloaded" data-eio-rwidth="24" data-eio-rheight="24">
+                                <a href="{{ route('set-language', ['locale' => 'jp']) }}" class="gt-current-lang notranslate glink nturl gt_raw_link-xxjexk">
+                                    <img src="{{ asset('assets/images/ja.svg') }}" width="24" height="24" alt="ja" loading="lazy" decoding="async" class=" ls-is-cached lazyloaded" data-eio-rwidth="24" data-eio-rheight="24">
                                     <span>{{ __("Japanese") }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-gtranslate-child">
-                                <a href="{{ route('set-language', ['locale' => 'en']) }}" data-gt-lang="en" class="notranslate glink nturl gt_raw_link-xxjexk">
-                                    <img src="{{ asset('assets/images/en-us.svg') }}" width="24" height="24" alt="en" loading="lazy" data-src="wp-content/plugins/gtranslate/flags/svg/en-us.svg" decoding="async" class=" lazyloaded" data-eio-rwidth="24" data-eio-rheight="24">
+                                <a href="{{ route('set-language', ['locale' => 'en']) }}" class="notranslate glink nturl gt_raw_link-xxjexk">
+                                    <img src="{{ asset('assets/images/en-us.svg') }}" width="24" height="24" alt="en" loading="lazy" decoding="async" class=" lazyloaded" data-eio-rwidth="24" data-eio-rheight="24">
                                     <span>{{ __("English") }}</span>
                                 </a>
                             </li>
