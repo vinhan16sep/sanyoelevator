@@ -14,7 +14,7 @@
                 <ul id="menu-main_menu" class="menu gMenu vk-menu-acc vk-menu-acc-active">
                     <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item"><a href=""><strong class="gMenu_name">{{ __("Home") }}</strong></a></li>
                     <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                        <a href="introduction/"><strong class="gMenu_name">Giơi thiệu sản phẩm</strong></a>
+                        <a href="introduction/"><strong class="gMenu_name">{{ __("Product Introduction") }}</strong></a>
                         <span class="acc-btn acc-btn-open"></span>
                         <ul class="sub-menu acc-child-close">
                             <li id="menu-item-369" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="introduction/#passenger_elevator">Thang máy chở khách</a></li>
@@ -23,15 +23,15 @@
                             <li id="menu-item-372" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="introduction/#small_luggage">Thang máy cho hành lý nhỏ</a></li>
                         </ul>
                     </li>
-                    <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="about_us/"><strong class="gMenu_name">Hồ sơ công ty</strong></a></li>
+                    <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="about_us/"><strong class="gMenu_name">{{ __("Company Profile") }}</strong></a></li>
                     <li id="menu-item-557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                        <a href=""><strong class="gMenu_name">Nội dung kinh doanh</strong></a>
+                        <a href=""><strong class="gMenu_name">{{ __("Business Contents") }}</strong></a>
                         <span class="acc-btn acc-btn-open"></span>
                         <ul class="sub-menu acc-child-close">
-                            <li id="menu-item-558" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#trengths">Diểm mạnh của chúng tôi</a></li>
+                            <li id="menu-item-558" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#trengths">{{ __("Our Strengths") }}</a></li>
                         </ul>
                     </li>
-                    <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="contact_us/"><strong class="gMenu_name">Lien he</strong></a></li>
+                    <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="contact_us/"><strong class="gMenu_name">{{ __("Inquiry") }}</strong></a></li>
                     <li class="menu-item menu-item-gtranslate menu-item-has-children notranslate">
                         <a href="#" class="gt-current-wrapper notranslate glink nturl gt_raw_link-xxjexk">
                             <img src="{{ app()->getLocale() == 'jp' ? asset('assets/images/ja.svg') : asset('assets/images/en-us.svg') }}" width="24" height="24" loading="lazy" decoding="async" class=" lazyloaded" data-eio-rwidth="24" data-eio-rheight="24">

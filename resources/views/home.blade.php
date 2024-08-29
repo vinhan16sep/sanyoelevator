@@ -31,22 +31,22 @@
                         <article>
                             <section class="fadein is-active">
                                 <div class="triangle_box">
-                                    <p class="intro">Nippon Sanyo Lift Associate Co., Ltd., với tư cách là cầu nối giữa Nhật Bản và thế giới, là một công ty hướng tới mục tiêu cùng thế giới cùng tạo ra lợi ích chung bằng cách tận dụng kiến ​​thức và kinh nghiệm được trau dồi ở Nhật Bản để mang lại hạnh phúc cho người dân thông qua thang máy. <br>Các chuyên gia từ nhiều lĩnh vực khác nhau sẽ tập hợp để giao tiếp với thế giới từ Toyama và đề xuất lối sống phù hợp cho thời gian tới.</p>
+                                    <p class="intro">{{ __("Homepage Intro") }}</p>
                                 </div>
                             </section>
                             <section class="fadein">
-                                <h1 class="text_c">Tin tức</h1>
-                                <p class="title_sub">News</p>
+                                <h1 class="text_c">{{ __("News") }}</h1>
+                                <p class="title_sub">{{ __("News Sub Header") }}</p>
                                 <div class="wide_notice_box">
                                     <div class="notice_box">
                                         <dl class="notice_list"></dl>
                                     </div>
                                 </div>
-                                <p class="news_btn"><a href="#">Tin tức</a></p>
+                                <p class="news_btn"><a href="#">{{ __("News List") }}</a></p>
                             </section>
                             <section class="fadein">
-                                <h1 class="text_c">Đội hình thang máy</h1>
-                                <p class="title_sub">Elevator lineup</p>
+                                <h1 class="text_c">{{ __("Elevator Lineup") }}</h1>
+                                <p class="title_sub">{{ __("Elevator Lineup Sub Header") }}</p>
                                 <div class="top_slider_box">
                                     <div class="slick_slider slick-slider">
                                         <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
@@ -69,7 +69,7 @@
                                         <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
                                         <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
                                     </div>
-                                    <p class="news_btn"><a href="introduction/">San Pham</a></p>
+                                    <p class="news_btn"><a href="introduction/">{{ __("Product Introduction") }}</a></p>
                                 </div>
                             </section>
                             <section class="fadein">
