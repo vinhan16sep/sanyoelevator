@@ -74,7 +74,7 @@
 		@yield('css')
 
 	</head>
-	<body data-rsssl="1" class="home page-template-default page page-id-11 post-name-home post-type-page bootstrap4 fa_v6_css device-pc cookies-not-set">
+	<body data-rsssl="1" class="@yield("body_class", 'home page-template-default page page-id-11 post-name-home post-type-page bootstrap4 fa_v6_css device-pc cookies-not-set')">
         <a class="skip-link screen-reader-text" href="#main">Move</a>
         <a class="skip-link screen-reader-text" href="#vk-mobile-nav">Navigate</a>
 
@@ -121,8 +121,6 @@
         <script type="text/javascript" src="{{ asset('assets/js/jquery.touchwipe.min.js') }}" id="wp-jquery-lightbox-swipe-js"></script>
         <script type="text/javascript" src="{{ asset('assets/js/panzoom.min.js') }}" id="wp-jquery-lightbox-panzoom-js"></script>
         <script type="text/javascript" src="{{ asset('assets/js/jquery.lightbox.js') }}" id="wp-jquery-lightbox-js"></script>
-
-        @include('components.social')
 
 		@yield('script')
     </body>

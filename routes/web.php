@@ -35,6 +35,11 @@ Route::group(['middleware' => ['language', 'site_settings']], function () {
 	})->name('set-language');
 
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/introduction', [App\Http\Controllers\IntroductionController::class, 'index'])->name('introduction');
+    Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
+
+
+
     Route::get('/products', [App\Http\Controllers\ProductController::class, 'index'])->name('products');
     Route::get('/products/{slug}', [App\Http\Controllers\ProductController::class, 'show'])->name('products.show');
     Route::get('/product-category/{slug}', [App\Http\Controllers\ProductController::class, 'productCategory'])->name('productCategory');
