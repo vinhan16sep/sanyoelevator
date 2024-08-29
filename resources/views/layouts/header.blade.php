@@ -12,9 +12,9 @@
         <div id="gMenu_outer" class="gMenu_outer">
             <nav class="menu-main_menu-container">
                 <ul id="menu-main_menu" class="menu gMenu vk-menu-acc vk-menu-acc-active">
-                    <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item"><a href=""><strong class="gMenu_name">{{ __("Home") }}</strong></a></li>
+                    <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item"><a href="/"><strong class="gMenu_name">{{ __("Home") }}</strong></a></li>
                     <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                        <a href="introduction/"><strong class="gMenu_name">{{ __("Product Introduction") }}</strong></a>
+                        <a href="products/"><strong class="gMenu_name">{{ __("Product Introduction") }}</strong></a>
                         <span class="acc-btn acc-btn-open"></span>
                         <ul class="sub-menu acc-child-close">
                             <li id="menu-item-369" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="introduction/#passenger_elevator">Thang máy chở khách</a></li>

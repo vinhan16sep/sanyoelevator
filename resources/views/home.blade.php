@@ -49,27 +49,12 @@
                                 <p class="title_sub">{{ __("Elevator Lineup Sub Header") }}</p>
                                 <div class="top_slider_box">
                                     <div class="slick_slider slick-slider">
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
-                                        <img src="{{ asset('assets/images/passenger_elevator_29_slider-475x1024.jpg') }}" />
+                                        @foreach ($products as $prd)
+                                        <a href="{{ getImage($prd['image']) }}" rel="lightbox[16]"><img fetchpriority="high" decoding="async" src="{{ getImage($prd['image']) }}" alt="{{ $prd["title_$language"] }}" width="476" height="1024" class="aligncenter size-large wp-image-147 lazyautosizes ls-is-cached lazyloaded">
+                                            </a>
+                                        @endforeach
                                     </div>
-                                    <p class="news_btn"><a href="introduction/">{{ __("Product Introduction") }}</a></p>
+                                    <p class="news_btn"><a href="products/">{{ __("Product Introduction") }}</a></p>
                                 </div>
                             </section>
                             <section class="fadein">
