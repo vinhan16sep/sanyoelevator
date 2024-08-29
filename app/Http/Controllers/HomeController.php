@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 use App\Models\Banner;
+use App\Models\Business;
 use App\Models\Information;
+use App\Models\Strength;
 
 class HomeController extends Controller
 {
@@ -31,10 +33,15 @@ class HomeController extends Controller
 //        foreach ($tmpAbout as $item) {
 //            $about[$item['label']] = $item['value'];
 //        }
+        $business = Business::query()->where(["is_active" => 1])->get()->toArray();
+        $strengths = Strength::query()->where(["is_active" => 1])->get()->toArray();
+
         return view('home', [
 //            "banners" => ($banners->count() > 0) ? $banners->toArray() : [],
 //            "others" => ($others->count() > 0) ? $others->toArray() : [],
-//            "homeAbout" => $about
+//            "homeAbout" => $about,
+           "business" => $business,
+           "strengths" => $strengths,
         ]);
     }
 
