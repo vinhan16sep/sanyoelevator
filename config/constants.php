@@ -12,6 +12,7 @@ return [
         'KNOWLEDGE_IMAGE' => 'public/images/knowledge/%s/',
         'ACCESSORY_CATEGORY_IMAGE' => 'public/images/accessory-category/%s/',
         'ACCESSORY_IMAGE' => 'public/images/accessory/%s/',
+        'STRENGTH_IMAGE' => 'images/strength/%s/',
     ],
     'MESSAGE' => [
         'CREATE_SUCCEEDED' => 'CREATE_SUCCEEDED',

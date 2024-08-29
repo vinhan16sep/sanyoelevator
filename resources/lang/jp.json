@@ -59,5 +59,18 @@
     "There was an error sending your message": "メッセージの送信中にエラーが発生しました.",
     "Please enter your first and last name": "姓名を入力してください",
     "Please enter email address": "メールアドレスを入力してください",
-    "Please enter a valid email address": "有効なメールアドレスを入力してください"
+    "Please enter a valid email address": "有効なメールアドレスを入力してください",
+
+    "Business Contents": "事業内容",
+    "Business details": "Business details",
+    "Product Introduction": "製品紹介",
+    "Company Profile": "会社概要",
+    "Our Strengths": "私たちの強み",
+    "Inquiry": "お問い合わせ",
+    "Homepage Intro":"Nippon Sanyo Lift Associate 株式会社は、日本と世界を結ぶ架け橋として、エレベーターを通じてウェル・ビーイングの実現に向け、日本で培った知識と経験を活かし、世界との共創互恵を目指す企業です。様々な分野の専門家が集まり、富山という地から世界に発信し、これからの時代にあったライフスタイルの提案を行います。",
+    "News": "ニュース",
+    "News Sub Header": "News",
+    "News List": "ニュース一覧",
+    "Elevator Lineup": "エレベーターラインナップ",
+    "Elevator Lineup Sub Header": "Elevator Lineup"
 }
