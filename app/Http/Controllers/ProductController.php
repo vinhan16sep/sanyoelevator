@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\ProductCategory;
 
 class ProductController extends Controller
 {
@@ -24,9 +25,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::query()->with(["product_category"])->where(["is_active" => 1])->where("product_category_id", "!=", 5)->paginate(16)->withQueryString();
+        $productCates = ProductCategory::query()->with(["products"])->where(["is_active" => 1])->where("id", "!=", 1)->get()->toArray();
         return view('product-list', [
-            'products' => $products
+            'productCates' => $productCates
         ]);
     }
 

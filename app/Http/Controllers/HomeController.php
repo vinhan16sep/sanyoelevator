@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Banner;
 use App\Models\Business;
 use App\Models\Information;
+use App\Models\Product;
 use App\Models\Strength;
 
 class HomeController extends Controller
@@ -35,6 +36,7 @@ class HomeController extends Controller
 //        }
         $business = Business::query()->where(["is_active" => 1])->get()->toArray();
         $strengths = Strength::query()->where(["is_active" => 1])->get()->toArray();
+        $products = Product::query()->where(["is_active" => 1])->get()->toArray();
 
         return view('home', [
 //            "banners" => ($banners->count() > 0) ? $banners->toArray() : [],
@@ -42,6 +44,7 @@ class HomeController extends Controller
 //            "homeAbout" => $about,
            "business" => $business,
            "strengths" => $strengths,
+           "products" => $products,
         ]);
     }
 
