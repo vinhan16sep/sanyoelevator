@@ -60,4 +60,14 @@ class HomeController extends Controller
             'about' => $about
         ]);
     }
+
+    public function privacyPolicy()
+    {
+        return view('privacy_policy');
+    }
+
+    public function siteMap()
+    {
+        return view('site_map');
+    }
 }

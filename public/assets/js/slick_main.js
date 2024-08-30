@@ -3,18 +3,18 @@ $(document).ready(function(){
 	autoplay: true,
 	infinite: true,
 	arrows: true,
-	slidesToShow: 15, 
+	slidesToShow: 10,
 	slidesToScroll: 3,
 	responsive: [{
 		breakpoint: 768,
 	settings: {
-		slidesToShow: 6,
+		slidesToShow: 4,
 	slidesToScroll: 2,
 	}
 	}, {
-	breakpoint: 480, 
+	breakpoint: 480,
 		settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
       }
     }]

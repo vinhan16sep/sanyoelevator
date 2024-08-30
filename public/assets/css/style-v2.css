@@ -810,7 +810,7 @@ ul.introduction li {
 	-webkit-flex-basis: 19% !important;
 	-ms-flex-basis: 19% !important;
 	list-style-type: none !important;
-	margin: 0 auto 1% auto;
+	/*margin: 0 auto 1% auto;*/
 	text-align: center;
 
 }

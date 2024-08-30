@@ -5,75 +5,188 @@
 @section('meta_description', __("Contact Us"))
 
 @section('content')
-    <div role="main" class="main">
 
+    @include('components.breadcrumb', ['title' => 'Contact Us'])
+
+    <br>
+    <div class="section siteContent">
         <div class="container">
+            <div class="row">
+                <div class="col mainSection mainSection-col-one" id="main" role="main">
+                    <article id="post-20" class="entry entry-full post-20 page type-page status-publish has-post-thumbnail hentry wpautop">
+                        <div class="entry-body">
+                            <article>
+                                <section class="fadein is-active">
+                                    <div class="wpcf7 js" id="wpcf7-f6-p20-o1" lang="ja" dir="ltr">
+                                        <div class="screen-reader-response">
+                                            <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                            <ul></ul>
+                                        </div>
+                                        <form action="{{ route('contact.store') }}" method="post" class="wpcf7-form init" aria-label="Mâu liên hệ" novalidate="novalidate" data-status="init">
+                                            <input type="hidden" value="{{ csrf_token() }}" name="_token">
 
-            <div class="row py-4">
-                <div class="col-lg-6">
-
-                    <h2 class="font-weight-bold text-8 mt-2 mb-0">{{ __('Contact Us') }}</h2>
-                    <p class="mb-4">{{ __("Feel free to ask for details, dont save any questions!") }}</p>
-
-                    <form class="contact-form" action="{{ route("contact.store") }}" method="POST" id="contact">
-                        <div class="contact-form-success alert alert-success d-none mt-4">
-                            <strong>Success!</strong> Your message has been sent to us.
+                                            <section>
+                                                <p>
+                                                    <img decoding="async" src="./assets/images/mfp_must.svg" alt="Yêu cầu" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/mfp_must.svg" class=" lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
+                                                    <noscript>
+                                                        <img decoding="async" src="./assets/images/mfp_must.svg" alt="必須" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-eio="l" />
+                                                    </noscript>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Tên công ty, tên tổ chức</font>
+                                                    </font>
+                                                    <br>
+                                                    <span class="wpcf7-form-control-wrap" data-name="company">
+                                                     <input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" value="" type="text" name="company">
+                                                    </span>
+                                                </p>
+                                            </section>
+                                            <section>
+                                                <p>
+                                                    <img decoding="async" src="./assets/images/mfp_must.svg" alt="Yêu cầu" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/mfp_must.svg" class=" lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
+                                                    <noscript>
+                                                        <img decoding="async" src="./assets/images/mfp_must.svg" alt="必須" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-eio="l" />
+                                                    </noscript>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Họ và tên</font>
+                                                    </font>
+                                                    <br>
+                                                    <span class="wpcf7-form-control-wrap" data-name="your-name">
+                                                     <input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" value="" type="text" name="your-name">
+                                                    </span>
+                                                </p>
+                                            </section>
+                                            <section>
+                                                <p>
+                                                    <img decoding="async" src="./assets/images/icon_any.svg" alt="Bất kì" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/icon_any.svg" class=" lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
+                                                    <noscript>
+                                                        <img decoding="async" src="./assets/images/icon_any.svg" alt="任意" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-eio="l" />
+                                                    </noscript>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">số điện thoại</font>
+                                                    </font>
+                                                    <br>
+                                                    <span class="wpcf7-form-control-wrap" data-name="tel-98">
+                                                     <input size="13" maxlength="13" class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel form-control" aria-invalid="false" value="" type="tel" name="tel-98">
+                                                    </span>
+                                                </p>
+                                            </section>
+                                            <section>
+                                                <fieldset style="text-align:left;">
+                                                    <legend>
+                                                        <img decoding="async" src="./assets/images/mfp_must.svg" alt="Yêu cầu" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/mfp_must.svg" class=" lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
+                                                        <noscript>
+                                                            <img decoding="async" src="./assets/images/mfp_must.svg" alt="必須" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-eio="l" />
+                                                        </noscript>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">địa chỉ email </font>
+                                                        </font>
+                                                    </legend>
+                                                    <p>
+                                                     <span class="wpcf7-form-control-wrap" data-name="your-email">
+                                                       <input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" value="" type="email" name="your-email">
+                                                     </span>
+                                                    </p>
+                                                    <p>
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">Nhập lại địa chỉ email</font>
+                                                        </font>
+                                                        <br>
+                                                        <span class="wpcf7-form-control-wrap" data-name="your-email_confirm">
+                                                           <input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Vui lòng nhập lại để xác nhận" value="" type="email" name="your-email_confirm">
+                                                        </span>
+                                                    </p>
+                                                </fieldset>
+                                            </section>
+                                            <section>
+                                                <p>
+                                                    <img decoding="async" src="./assets/images/mfp_must.svg" alt="Yêu cầu" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/mfp_must.svg" class=" ls-is-cached lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
+                                                    <noscript>
+                                                        <img decoding="async" src="./assets/images/mfp_must.svg" alt="必須" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-eio="l" />
+                                                    </noscript>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">Các câu hỏi, yêu cầu, v.v.</font>
+                                                    </font>
+                                                    <br>
+                                                    <span class="wpcf7-form-control-wrap" data-name="your-message">
+                                                     <textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" name="your-message"></textarea>
+                                                    </span>
+                                                </p>
+                                            </section>
+                                            <section>
+                                                <fieldset>
+                                                    <legend>
+                                                         <span style="color:#ff0000;">
+                                                           <i class="fas fa-exclamation-triangle"></i>
+                                                           <font style="vertical-align: inherit;">
+                                                             <font style="vertical-align: inherit;">Kiểm tra!</font>
+                                                           </font>
+                                                         </span>
+                                                    </legend>
+                                                    <p class="mt5 mb00">
+                                                        <label>
+                                                           <span class="wpcf7-form-control-wrap" data-name="acceptance-598">
+                                                             <span class="wpcf7-form-control wpcf7-acceptance">
+                                                               <span class="wpcf7-list-item">
+                                                                 <input type="checkbox" name="acceptance-598" value="1" aria-invalid="false">
+                                                               </span>
+                                                             </span>
+                                                           </span>
+                                                        </label>
+                                                        <span class="t_block">
+                                                           <font style="vertical-align: inherit;">
+                                                             <font style="vertical-align: inherit;">Vui lòng đánh dấu vào ô nếu thông tin trên là chính xác.</font>
+                                                           </font>
+                                                         </span>
+                                                    </p>
+                                                </fieldset>
+                                            </section>
+                                            <section>
+                                                <p>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">
+                                                            <input class="wpcf7-form-control wpcf7-submit has-spinner btn btn-primary" type="submit" value="gửi" disabled="">
+                                                        </font>
+                                                    </font>
+                                                    <span class="wpcf7-spinner"></span>
+                                                </p>
+                                            </section>
+                                            <p style="display: none !important;" class="akismet-fields-container" data-prefix="_wpcf7_ak_">
+                                                <label>
+                                                    <font style="vertical-align: inherit;">
+                                                        <font style="vertical-align: inherit;">∆</font>
+                                                    </font>
+                                                    <textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100" class="form-control"></textarea>
+                                                </label>
+                                                <input type="hidden" id="ak_js_1" name="_wpcf7_ak_js" value="1722953200853">
+                                                <script>
+                                                    document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());
+                                                </script>
+                                            </p>
+                                            <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                        </form>
+                                    </div>
+                                </section>
+                            </article>
                         </div>
-
-                        <div class="contact-form-error alert alert-danger d-none mt-4">
-                            <strong>Error!</strong> There was an error sending your message.
-                            <span class="mail-error-message text-1 d-block"></span>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col-lg-6">
-                                <label class="form-label mb-1 text-2">{{ __('Full Name') }}</label>
-                                <input type="text" value="" data-msg-required="{{ __("Please enter your first and last name") }}" maxlength="100" class="form-control text-3 h-auto py-2" name="name" required>
-                            </div>
-                            <div class="form-group col-lg-6">
-                                <label class="form-label mb-1 text-2">{{ __('Email Address') }}</label>
-                                <input type="email" value="" data-msg-required="{{ __("Please enter email address") }}." data-msg-email="{{ __("Please enter a valid email address") }}." maxlength="100" class="form-control text-3 h-auto py-2" name="email" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col">
-                                <label class="form-label mb-1 text-2">{{ __('Subject') }}</label>
-                                <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control text-3 h-auto py-2" name="subject">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col">
-                                <label class="form-label mb-1 text-2">{{ __('Message') }}</label>
-                                <textarea maxlength="5000" data-msg-required="Please enter your message." rows="8" class="form-control text-3 h-auto py-2" name="message"></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col">
-                                <input type="submit" value="{{ __('Send Message') }}" class="btn btn-primary btn-modern" data-loading-text="Loading...">
-                            </div>
-                        </div>
-                    </form>
-
+                    </article>
+                    <!-- [ /#post-20 ] -->
                 </div>
-                <div class="col-lg-6">
-
-                    <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
-                        <h4 class="mt-2 mb-1">{{ __('Our') }} <strong>{{ __('Office') }}</strong></h4>
-                        <ul class="list list-icons list-icons-style-2 mt-2">
-                            <li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">{{ __('Address') }}:</strong> {{ $contactInformations["address_$language"] }}</li>
-                            <li><i class="fas fa-phone top-6"></i> <strong class="text-dark">{{ __('Phone') }}:</strong> {{ $contactInformations["phone"] }}</li>
-                            <li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">{{ __('Email') }}:</strong> <a href="mailto:{{ $contactInformations["email"] }}">{{ $contactInformations["email"] }}</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-
+                <!-- [ /.mainSection ] -->
             </div>
-
+            <!-- [ /.row ] -->
         </div>
-
+        <!-- [ /.container ] -->
     </div>
 @endsection
 
 @section('script')
+    <script>
+        $('[name=acceptance-598]').on('change', function() {
+            if ($(this).prop('checked')) {
+                $('input[type="submit"]').removeAttr('disabled')
+            } else {
+                $('input[type="submit"]').attr('disabled', true)
+            }
+        });
+    </script>
 @endsection

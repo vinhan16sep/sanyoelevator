@@ -334,7 +334,7 @@
     line-height: 1.6;
   }
 
-  
+
   :root {
     --ver_page_top_button_url: url(../fonts/to-top-btn-icon.svg);
   }
@@ -352,7 +352,7 @@
       url("../fonts/vk_sns.svg?-bq20cj#vk_sns")
         format("svg");
   }
-  
+
   img.wp-smiley, img.emoji {
     display: inline !important;
     border: none !important;
@@ -373,7 +373,7 @@
     --vk-menu-acc-icon-close-black-bg-src: url("../images/vk-menu-close-black.svg");
     --vk-menu-acc-icon-close-white-bg-src: url("../images/vk-menu-close-white.svg");
 }
-  
+
 :root {
     --color-key: #002c50;
     --wp--preset--color--vk-color-primary: #002c50;
@@ -489,7 +489,7 @@
     --g_nav_sub_acc_icon_open_url: url(../images/vk-menu-acc-icon-open-white.svg);
     --g_nav_sub_acc_icon_close_url: url(../images/vk-menu-close-white.svg);
   }
-  
+
   #outerImageContainer {
     box-shadow: 0 0 4px 2px rgba(0,0,0,.2);
 }

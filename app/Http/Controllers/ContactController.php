@@ -37,22 +37,21 @@ class ContactController extends Controller
             $data = $request->only(["name", "email", "subject", "message"]);
             //insert db
 
-            
+
             $this->sendMailContact($data);
-            return [
-                "response" => "success"
-            ];
+
         } catch (\Throwable $th) {
             \Log::error($th);
         }
-        return false;
+
+        return redirect()->back();
     }
-    
+
 
     private function sendMailContact($data){
-        $name = $data["name"] ?? ""; 
-        $email = $data["email"] ?? ""; 
-        $subject = $data["subject"] ?? ""; 
+        $name = $data["name"] ?? "";
+        $email = $data["email"] ?? "";
+        $subject = $data["subject"] ?? "";
         $message = $data["message"] ?? "";
         return SendContactEmail::dispatch($name, $email, $subject, $message);
     }

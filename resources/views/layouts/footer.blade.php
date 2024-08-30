@@ -3,8 +3,8 @@
         <div class="container">
             <nav class="menu-footer_menu-container">
                 <ul id="menu-footer_menu" class="menu nav">
-                    <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-28"><a rel="privacy-policy" href="privacy_policy/">Chính sách bảo mật</a></li>
-                    <li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="site_map/">Sơ đồ trang web</a></li>
+                    <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-28"><a rel="privacy-policy" href="/privacy_policy/">Chính sách bảo mật</a></li>
+                    <li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="/site_map/">Sơ đồ trang web</a></li>
                 </ul>
             </nav>
         </div>
