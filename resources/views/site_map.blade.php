@@ -39,37 +39,37 @@
                                         <div class="wsp-container"><h2 class="wsp-pages-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trang chu</font></font></h2>
                                             <ul class="wsp-pages-list">
                                                 <li class="page_item page-item-11">
-                                                    <a href="/">
+                                                    <a href="{{ route("home") }}">
                                                         TRANG CHỦ
                                                     </a>
                                                 </li>
                                                 <li class="page_item page-item-16">
-                                                    <a href="/introduction/">
+                                                    <a href="{{ route("products") }}">
                                                         Giơi thiệu sản phẩm
                                                     </a>
                                                 </li>
                                                 <li class="page_item page-item-14">
-                                                    <a href="/about_us/">
+                                                    <a href="{{ route("about") }}">
                                                         Hồ sơ công ty
                                                     </a>
                                                 </li>
                                                 <li class="page_item page-item-525">
-                                                    <a href="/business/">
+                                                    <a href="{{ route("business") }}">
                                                         Chi tiết doanh nghiệp
                                                     </a>
                                                 </li>
                                                 <li class="page_item page-item-20">
-                                                    <a href="/contact_us/">
+                                                    <a href="{{ route("contact") }}">
                                                         điều tra
                                                     </a>
                                                 </li>
                                                 <li class="page_item page-item-116 current_page_item">
-                                                    <a href="/site_map/">
+                                                    <a href="{{ route("site_map") }}">
                                                         sơ đồ trang web
                                                     </a>
                                                 </li>
                                                 <li class="page_item page-item-3">
-                                                    <a href="/privacy_policy/">
+                                                    <a href="{{ route("privacy_policy") }}">
                                                         Chính sách bảo mật
                                                     </a>
                                                 </li>

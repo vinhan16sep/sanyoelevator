@@ -41,7 +41,7 @@
                                         </li>
                                     </ul>
                                     <p>
-                                        <img fetchpriority="high" decoding="async" src="./assets/images/business_img.jpg" alt="事業内容" width="1200" height="632" class="aligncenter size-full wp-image-537 lazyautosizes ls-is-cached lazyloaded">
+                                        <img fetchpriority="high" decoding="async" src="{{ asset('assets/images/business_img.jpg') }}" alt="事業内容" width="1200" height="632" class="aligncenter size-full wp-image-537 lazyautosizes ls-is-cached lazyloaded">
                                         <br>
                                     </p>
                                 </section>
@@ -53,35 +53,35 @@
                                     <ul class="trengths">
                                         <li>
                                             <p>
-                                                <img decoding="async" src="./assets/images/trengths_01.jpg" alt="品質管理と信頼性" width="500" height="333" class="aligncenter size-full wp-image-542 lazyautosizes ls-is-cached lazyloaded" >
+                                                <img decoding="async" src="{{ asset('assets/images/trengths_01.jpg') }}" alt="品質管理と信頼性" width="500" height="333" class="aligncenter size-full wp-image-542 lazyautosizes ls-is-cached lazyloaded" >
                                             </p>
                                             <h4>Kiểm soát chất lượng và độ tin cậy</h4>
                                             <p>Chúng tôi có một đội ngũ chuyên gia giàu kinh nghiệm có thể cung cấp hỗ trợ kỹ thuật và đào tạo. Chúng tôi luôn có hệ thống hỗ trợ để giúp khách hàng sử dụng sản phẩm của chúng tôi một cách hiệu quả.</p>
                                         </li>
                                         <li>
                                             <p>
-                                                <img decoding="async" src="./assets/images/trengths_02.jpg" alt="専門知識とサポート" width="500" height="333" class="aligncenter size-full wp-image-543 lazyautosizes ls-is-cached lazyloaded">
+                                                <img decoding="async" src="{{ asset('assets/images/trengths_02.jpg') }}" alt="専門知識とサポート" width="500" height="333" class="aligncenter size-full wp-image-543 lazyautosizes ls-is-cached lazyloaded">
                                             </p>
                                             <h4>Chuyên môn và hỗ trợ</h4>
                                             <p>Chúng tôi có các tiêu chuẩn kiểm soát chất lượng nghiêm ngặt và duy trì các tiêu chuẩn cao về chất lượng và độ tin cậy của sản phẩm. Chúng tôi thực hiện các biện pháp kỹ lưỡng để đảm bảo chất lượng để khách hàng có thể yên tâm sử dụng sản phẩm của chúng tôi.</p>
                                         </li>
                                         <li>
                                             <p>
-                                                <img decoding="async" src="./assets/images/trengths_03.jpg" alt="グローバルな展開とロジスティクス" width="500" height="333" class="aligncenter size-full wp-image-548 lazyautosizes ls-is-cached lazyloaded" >
+                                                <img decoding="async" src="{{ asset('assets/images/trengths_03.jpg') }}" alt="グローバルな展開とロジスティクス" width="500" height="333" class="aligncenter size-full wp-image-548 lazyautosizes ls-is-cached lazyloaded" >
                                             </p>
                                             <h4>Mở rộng toàn cầu và hậu cần</h4>
                                             <p>Tận dụng mạng lưới quốc tế và kinh nghiệm sâu rộng, chúng tôi cung cấp dịch vụ hậu cần để xuất khẩu sản phẩm trên toàn thế giới. Chúng tôi giúp bạn mở rộng hoạt động kinh doanh của mình trên toàn cầu bằng cách đảm bảo giao hàng nhanh chóng và hiệu quả.</p>
                                         </li>
                                         <li>
                                             <p>
-                                                <img decoding="async" src="./assets/images/trengths_04.jpg" alt="アフターケアと保守サービス" width="500" height="333" class="aligncenter size-full wp-image-545 lazyautosizes ls-is-cached lazyloaded" >
+                                                <img decoding="async" src="{{ asset('assets/images/trengths_04.jpg') }}" alt="アフターケアと保守サービス" width="500" height="333" class="aligncenter size-full wp-image-545 lazyautosizes ls-is-cached lazyloaded" >
                                             </p>
                                             <h4>Dịch vụ chăm sóc và bảo trì sau</h4>
                                             <p>Chúng tôi cung cấp dịch vụ bảo trì và chăm sóc sau bán hàng lâu dài sau khi sản phẩm được mua. Chúng tôi cung cấp hỗ trợ để đảm bảo rằng máy móc của bạn luôn hoạt động trong tình trạng tối ưu, bao gồm kiểm tra, bảo trì và sửa chữa thường xuyên.</p>
                                         </li>
                                         <li>
                                             <p>
-                                                <img decoding="async" src="./assets/images/trengths_05.jpg" alt="イノベーションと継続的な改善" width="500" height="333" class="aligncenter size-full wp-image-546 lazyautosizes ls-is-cached lazyloaded" >
+                                                <img decoding="async" src="{{ asset('assets/images/trengths_05.jpg') }}" alt="イノベーションと継続的な改善" width="500" height="333" class="aligncenter size-full wp-image-546 lazyautosizes ls-is-cached lazyloaded" >
                                             </p>
                                             <h4>Đổi mới và cải tiến liên tục</h4>
                                             <p>Chúng tôi không ngừng đổi mới và cung cấp các sản phẩm kết hợp công nghệ và xu hướng mới nhất. Chúng tôi cũng sử dụng phản hồi của khách hàng để cải thiện sản phẩm của mình và cung cấp nhiều giá trị hơn cho khách hàng.</p>

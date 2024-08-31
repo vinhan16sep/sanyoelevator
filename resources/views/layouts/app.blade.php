@@ -121,6 +121,7 @@
         <script type="text/javascript" src="{{ asset('assets/js/jquery.touchwipe.min.js') }}" id="wp-jquery-lightbox-swipe-js"></script>
         <script type="text/javascript" src="{{ asset('assets/js/panzoom.min.js') }}" id="wp-jquery-lightbox-panzoom-js"></script>
         <script type="text/javascript" src="{{ asset('assets/js/jquery.lightbox.js') }}" id="wp-jquery-lightbox-js"></script>
+        <script type="text/javascript" src="{{ asset('assets/js/custom.js') }}" id="custom-js"></script>
 
 		@yield('script')
     </body>

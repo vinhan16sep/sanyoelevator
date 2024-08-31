@@ -799,16 +799,16 @@ ul.introduction {
 	-webkit-flex-wrap: wrap !important;
 	flex-wrap: wrap !important;
 	-webkit-justify-content: space-between !important;
-	justify-content: space-between !important;
+	justify-content: left !important;
 	margin: 0 !important;
 	padding: 0 !important;
-	align-items: end;
+	align-items: start;
 }
 
 ul.introduction li {
-	flex-basis: 19% !important;
-	-webkit-flex-basis: 19% !important;
-	-ms-flex-basis: 19% !important;
+	flex-basis: 20% !important;
+	-webkit-flex-basis: 20% !important;
+	-ms-flex-basis: 20% !important;
 	list-style-type: none !important;
 	/*margin: 0 auto 1% auto;*/
 	text-align: center;
