@@ -47,7 +47,7 @@ class Controller extends BaseController
     }
 
     protected function getActivedProductCategories() {
-        $result = ProductCategory::where(['is_active' => '1'])->get();
+        $result = ProductCategory::where(['is_active' => '1'])->where("id", "!=", 1)->get();
         return ($result->count() > 0) ? $result->toArray() : [];
     }
 

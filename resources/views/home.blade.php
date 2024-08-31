@@ -93,7 +93,6 @@
                                         <p>{{ $item["description_$language"] }}</p>
                                     </li>
                                     @endforeach
-                                    <li></li>
                                 </ul>
                                 <p class="news_btn"><a href="#trengths">{{ __("Learn More") }}</a></p>
                             </section>
