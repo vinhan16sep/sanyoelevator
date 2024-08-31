@@ -17,10 +17,9 @@
                         <a class="menu-url" href="{{ route('products') }}"><strong class="gMenu_name">{{ __("Product Introduction") }}</strong></a>
                         <span class="acc-btn acc-btn-open"></span>
                         <ul class="sub-menu acc-child-close">
-                            <li id="menu-item-369" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{ route('products') }}/#passenger_elevator">Thang máy chở khách</a></li>
-                            <li id="menu-item-370" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{ route('products') }}/#luggage_elevator">Thang máy hành lý</a></li>
-                            <li id="menu-item-371" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{ route('products') }}/#home_lift">Thang máy gia đình</a></li>
-                            <li id="menu-item-372" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{ route('products') }}/#small_luggage">Thang máy cho hành lý nhỏ</a></li>
+                            @foreach ($activedProductCategories as $item)
+                            <li id="menu-item-369" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{ route('products')  }}/#{{ $item['slug'] }}">{{ $item["title_$language"] }}</a></li>
+                            @endforeach
                         </ul>
                     </li>
                     <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-url" href="{{ route('about') }}"><strong class="gMenu_name">{{ __("Company Profile") }}</strong></a></li>

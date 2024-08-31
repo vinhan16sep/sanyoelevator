@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Business;
+use App\Models\Strength;
+
 class BusinessController extends Controller
 {
     /**
@@ -22,6 +25,12 @@ class BusinessController extends Controller
      */
     public function index()
     {
-        return view('business');
+        $business = Business::query()->where(["is_active" => 1])->get()->toArray();
+        $strengths = Strength::query()->where(["is_active" => 1])->get()->toArray();
+
+        return view('business', [
+           "business" => $business,
+           "strengths" => $strengths,
+        ]);
     }
 }
