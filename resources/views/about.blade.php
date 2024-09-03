@@ -16,7 +16,7 @@
                     <div class="entry-body">
                         <article>
                             <section class="fadein is-active">
-                                <h2 class="ttl_01"> Lời chào mừng </h2>
+                                <h2 class="ttl_01"> {{ __("Message from the President") }} </h2>
                                 <p>
                                     <img fetchpriority="high" decoding="async" src="./assets/images/about_us_boss.jpg" alt="社長あいさつ" width="420" height="538" class="alignleft size-full wp-image-584 lazyautosizes lazyloaded">
                                 </p>
@@ -53,7 +53,7 @@
                             </section>
                             <section class="fadein is-active">
                                 <h2 class="ttl_01">
-                                    Hồ sơ công ty</h2>
+                                    {{ __("Company Profile") }}</h2>
                                 <table class="about">
                                     <tbody>
                                     <tr>
