@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Information;
+
 class AboutController extends Controller
 {
     /**
@@ -22,6 +24,9 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return view('about');
+        $informations = Information::where("type", "CONTACT")->pluck("value", "label")->toArray();
+        return view('about', [
+            'informations' => $informations
+        ]);
     }
 }

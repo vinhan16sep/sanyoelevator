@@ -57,46 +57,44 @@
                                 <table class="about">
                                     <tbody>
                                     <tr>
-                                        <th>Tên công ty</th>
-                                        <td>Nippon Sanyo lift associate co.,Ltd.</td>
+                                        <th>{{ __("Company Name") }}</th>
+                                        <td>{{ $informations["company_name_$language"] }}</td>
                                     </tr>
                                     <tr>
-                                        <th>
-                                            vị trí</th>
-                                        <td>939-2613 <br> 736 Takahitsuke, Fuchucho, Thành phố Toyama, Tỉnh Toyama </td>
+                                        <th>{{ __("Location") }}</th>
+                                        <td>{{ $informations["address_$language"] }}</td>
                                     </tr>
                                     <tr>
-                                        <th>
-                                            Tiêu biểu</th>
+                                        <th>{{ __("Representative") }}</th>
                                         <td>
-                                            AbcD
+                                            {{ $informations["representative_$language"] }}
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th>Ngày thành lập</th>
-                                        <td>Ngày 25 tháng 10 năm 2011</td>
+                                        <th>{{ __("Established date") }}</th>
+                                        <td>{{ $informations["established_date_$language"] }}</td>
                                     </tr>
                                     <tr>
-                                        <th>Nội dung kinh doanh</th>
-                                        <td>Xuất khẩu thang máy</td>
+                                        <th>{{ __("Business Contents") }}</th>
+                                        <td>{{ $informations["business_contents_$language"] }}</td>
                                     </tr>
                                     <tr>
                                         <th>E-mail</th>
                                         <td>
-                                            <a href="mailto:info@test">info@test</a>
+                                            <a href="mailto:{{ $informations["email"] }}">{{ $informations["email"] }}</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>URL</th>
                                         <td>
-                                            <a href="https://test.com/">https://test.com/</a>
+                                            <a href="{{ $informations["site_url"] }}">{{ $informations["site_url"] }}</a>
                                         </td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </section>
                             <section class="fadein is-active">
-                                <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe></div>
+                                <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ $informations["google_map"] }}"><a href="https://www.gps.ie/">gps trackers</a></iframe></div>
                             </section>
                         </article>
 
