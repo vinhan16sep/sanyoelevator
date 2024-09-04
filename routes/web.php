@@ -36,7 +36,7 @@ Route::group(['middleware' => ['language', 'site_settings']], function () {
 
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/business', [App\Http\Controllers\BusinessController::class, 'index'])->name('business');
-    Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
+    Route::get('/about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
     Route::get('/privacy_policy', [App\Http\Controllers\HomeController::class, 'privacyPolicy'])->name('privacy_policy');
     Route::get('/site_map', [App\Http\Controllers\HomeController::class, 'siteMap'])->name('site_map');
 
@@ -50,7 +50,7 @@ Route::group(['middleware' => ['language', 'site_settings']], function () {
     Route::get('/check-product', [App\Http\Controllers\PartController::class, 'index'])->name('part');
     Route::get('/contact-us', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
     Route::post('/contact-us', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
-    Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'aboutUs'])->name('about');
+    // Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'aboutUs'])->name('about');
 });
 
 
