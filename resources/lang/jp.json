@@ -81,5 +81,15 @@
     "Representative": "代表者",
     "Established date": "設立日",
     "Privacy Policy": "プライバシーポリシー",
-    "Sitemap": "サイトマップ"
+    "Sitemap": "サイトマップ",
+    "Company name, organization name": "会社名、団体名",
+    "Full name": "氏名",
+    "Telephone number": "電話番号",
+    "Email address": "メールアドレス",
+    "Re-enter your email address": "メールアドレス再度入力",
+    "Please enter it again to confirm": "Please enter it again to confirm",
+    "Questions, requests, etc.": "ご質問、ご要望など",
+    "If there are no errors in the above information, please check the box.": "上記内容で間違いがなければ、チェックを入れてください。",
+    "Send": "送信",
+    "Check!": "Check!"
 }

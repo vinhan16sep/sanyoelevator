@@ -2,7 +2,7 @@
     <div class="container siteHeadContainer">
         <div class="navbar-header">
             <h1 class="navbar-brand siteHeader_logo">
-                <a href="">
+                <a href="/">
                      <span>
                         <img src="{{ asset('assets/images/nsl_logo.svg') }}" alt="Nippon Sanyo Lift Associate 株式会社" data-src="{{ asset('assets/images/nsl_logo.svg') }}" decoding="async" class=" lazyloaded">
                      </span>

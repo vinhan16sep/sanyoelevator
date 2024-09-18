@@ -36,28 +36,28 @@
 <div class="vk-mobile-nav vk-mobile-nav-drop-in" id="vk-mobile-nav">
     <nav class="vk-mobile-nav-menu-outer" role="navigation">
         <ul id="menu-main_menu-1" class="vk-menu-acc menu vk-menu-acc-active">
-            <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-22"><a href="" aria-current="page">HOME</a></li>
+            <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-22"><a href="" aria-current="page">{{ __("Home") }}</a></li>
             <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24">
-                <a href="introduction/">Giơi thiệu sản phẩm</a>
+                <a href="{{ route('products') }}">{{ __("Product Introduction") }}</a>
                 <span class="acc-btn acc-btn-open"></span>
                 <ul class="sub-menu acc-child-close">
-                    <li id="menu-item-369" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-369"><a href="introduction/#passenger_elevator">Thang máy chở khách</a></li>
-                    <li id="menu-item-370" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-370"><a href="introduction/#luggage_elevator">Thang máy hành lý</a></li>
-                    <li id="menu-item-371" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-371"><a href="introduction/#home_lift">Thang máy gia đình</a></li>
-                    <li id="menu-item-372" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-372"><a href="introduction/#small_luggage">Thang máy cho hành lý nhỏ</a></li>
+                    
+                    @foreach ($activedProductCategories as $item)
+                    <li id="menu-item-369" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{ route('products')  }}/#{{ $item['slug'] }}">{{ $item["title_$language"] }}</a></li>
+                    @endforeach
                 </ul>
             </li>
-            <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="about_us/">
-                    Hồ sơ công ty</a></li>
+            <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
+                <a href="{{ route('about') }}">{{ __("Company Profile") }}</a>
+            </li>
             <li id="menu-item-557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-557">
-                <a href="">
-                    Nội dung kinh doanh</a>
+                <a href="{{ route('business') }}">{{ __("Business Contents") }}</a>
                 <span class="acc-btn acc-btn-open"></span>
                 <ul class="sub-menu acc-child-close">
-                    <li id="menu-item-558" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-558"><a href="#trengths">Diểm mạnh của chúng tôi</a></li>
+                    <li id="menu-item-558" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-558"><a href="{{ route('business') }}/#trengths">{{ __("Our Strengths") }}</a></li>
                 </ul>
             </li>
-            <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="contact_us/">Gioi Thieu</a></li>
+            <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="{{ route('contact') }}">{{ __("Inquiry") }}</a></li>
             <li class="menu-item menu-item-gtranslate menu-item-has-children notranslate">
                 <a href="#" data-gt-lang="ja" class="gt-current-wrapper notranslate glink nturl gt_raw_link-xxjexk" title="Japanese">
                     <img src="{{ app()->getLocale() == 'jp' ? asset('assets/images/ja.svg') : asset('assets/images/en-us.svg') }}" width="24" height="24" loading="lazy" decoding="async" class=" lazyloaded" data-eio-rwidth="24" data-eio-rheight="24">
