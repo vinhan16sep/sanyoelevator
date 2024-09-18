@@ -53,7 +53,10 @@ class HomeController extends Controller
 
     public function privacyPolicy()
     {
-        return view('privacy_policy');
+        $privacyPolicy = Information::where("type", "ABOUT")->pluck("value", "label")->toArray();
+        return view('privacy_policy', [
+            'privacyPolicy' => $privacyPolicy
+        ]);
     }
 
     public function siteMap()

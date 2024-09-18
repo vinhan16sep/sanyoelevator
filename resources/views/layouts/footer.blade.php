@@ -3,8 +3,8 @@
         <div class="container">
             <nav class="menu-footer_menu-container">
                 <ul id="menu-footer_menu" class="menu nav">
-                    <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-28"><a rel="privacy-policy" href="{{ route("privacy_policy") }}">Chính sách bảo mật</a></li>
-                    <li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="{{ route("site_map") }}">Sơ đồ trang web</a></li>
+                    <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-28"><a rel="privacy-policy" href="{{ route("privacy_policy") }}">{{ __("Privacy Policy") }}</a></li>
+                    <li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="{{ route("site_map") }}">{{ __("Sitemap") }}</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,7 +27,7 @@
     </div>
     <div class="container sectionBox copySection text-center">
         <p>
-            Copyright © <script type="text/javascript"> myDate = new Date() ;myYear = myDate.getFullYear ();document.write(myYear); </script>2024 Công ty TNHH Liên kết thang máy Nippon Sanyo. Mọi quyền được bảo lưu.
+            Copyright © <script type="text/javascript"> myDate = new Date() ;myYear = myDate.getFullYear ();document.write(myYear); </script>2024 Nippon Sanyo. All Rights Reserved.
         </p>
     </div>
 </footer>

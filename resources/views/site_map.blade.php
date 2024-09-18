@@ -65,12 +65,12 @@
                                                 </li>
                                                 <li class="page_item page-item-116 current_page_item">
                                                     <a href="{{ route("site_map") }}">
-                                                        sơ đồ trang web
+                                                        {{ __("Sitemap") }}
                                                     </a>
                                                 </li>
                                                 <li class="page_item page-item-3">
                                                     <a href="{{ route("privacy_policy") }}">
-                                                        Chính sách bảo mật
+                                                        {{ __("Privacy Policy") }}
                                                     </a>
                                                 </li>
                                             </ul>
