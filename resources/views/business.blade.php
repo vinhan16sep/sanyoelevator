@@ -6,7 +6,7 @@
 
 @section('content')
 
-    @include('components.breadcrumb', ['title' => 'Business'])
+    @include('components.breadcrumb', ['title' => __("Business Contents")])
 
     <div class="section siteContent">
         <div class="container">

@@ -81,6 +81,15 @@
     "Representative": "Representative",
     "Established date": "Established date",
     "Privacy Policy": "Privacy Policy",
-    "Sitemap": "Sitemap"
-    
+    "Sitemap": "Sitemap",
+    "Company name, organization name": "Company name, organization name",
+    "Full name": "Full name",
+    "Telephone number": "Telephone number",
+    "Email address": "Email address",
+    "Re-enter your email address": "Re-enter your email address",
+    "Please enter it again to confirm": "Please enter it again to confirm",
+    "Questions, requests, etc.": "Questions, requests, etc.",
+    "If there are no errors in the above information, please check the box.": "If there are no errors in the above information, please check the box.",
+    "Send": "Send",
+    "Check!": "Check!"
 }

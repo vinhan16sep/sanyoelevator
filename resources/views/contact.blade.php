@@ -6,7 +6,7 @@
 
 @section('content')
 
-    @include('components.breadcrumb', ['title' => 'Contact Us'])
+    @include('components.breadcrumb', ['title' => __("Contact Us")])
 
     <br>
     <div class="section siteContent">
@@ -22,17 +22,17 @@
                                             <p role="status" aria-live="polite" aria-atomic="true"></p>
                                             <ul></ul>
                                         </div>
-                                        <form action="{{ route('contact.store') }}" method="post" class="wpcf7-form init" aria-label="Mâu liên hệ" novalidate="novalidate" data-status="init">
+                                        <form action="{{ route('contact.store') }}" method="post" class="wpcf7-form init" aria-label="Contact" novalidate="novalidate" data-status="init">
                                             <input type="hidden" value="{{ csrf_token() }}" name="_token">
 
                                             <section>
                                                 <p>
-                                                    <img decoding="async" src="./assets/images/mfp_must.svg" alt="Yêu cầu" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/mfp_must.svg" class=" lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
+                                                    <img decoding="async" src="./assets/images/mfp_must.svg" alt="" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/mfp_must.svg" class=" lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
                                                     <noscript>
                                                         <img decoding="async" src="./assets/images/mfp_must.svg" alt="必須" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-eio="l" />
                                                     </noscript>
                                                     <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Tên công ty, tên tổ chức</font>
+                                                        <font style="vertical-align: inherit;">{{ __("Company name, organization name") }}</font>
                                                     </font>
                                                     <br>
                                                     <span class="wpcf7-form-control-wrap" data-name="company">
@@ -42,12 +42,12 @@
                                             </section>
                                             <section>
                                                 <p>
-                                                    <img decoding="async" src="./assets/images/mfp_must.svg" alt="Yêu cầu" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/mfp_must.svg" class=" lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
+                                                    <img decoding="async" src="./assets/images/mfp_must.svg" alt="" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/mfp_must.svg" class=" lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
                                                     <noscript>
                                                         <img decoding="async" src="./assets/images/mfp_must.svg" alt="必須" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-eio="l" />
                                                     </noscript>
                                                     <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Họ và tên</font>
+                                                        <font style="vertical-align: inherit;">{{ __("Full name") }}</font>
                                                     </font>
                                                     <br>
                                                     <span class="wpcf7-form-control-wrap" data-name="your-name">
@@ -57,12 +57,12 @@
                                             </section>
                                             <section>
                                                 <p>
-                                                    <img decoding="async" src="./assets/images/icon_any.svg" alt="Bất kì" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/icon_any.svg" class=" lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
+                                                    <img decoding="async" src="./assets/images/icon_any.svg" alt="" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/icon_any.svg" class=" lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
                                                     <noscript>
                                                         <img decoding="async" src="./assets/images/icon_any.svg" alt="任意" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-eio="l" />
                                                     </noscript>
                                                     <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">số điện thoại</font>
+                                                        <font style="vertical-align: inherit;">{{ __("Telephone number") }}</font>
                                                     </font>
                                                     <br>
                                                     <span class="wpcf7-form-control-wrap" data-name="tel-98">
@@ -73,12 +73,12 @@
                                             <section>
                                                 <fieldset style="text-align:left;">
                                                     <legend>
-                                                        <img decoding="async" src="./assets/images/mfp_must.svg" alt="Yêu cầu" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/mfp_must.svg" class=" lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
+                                                        <img decoding="async" src="./assets/images/mfp_must.svg" alt="" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/mfp_must.svg" class=" lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
                                                         <noscript>
                                                             <img decoding="async" src="./assets/images/mfp_must.svg" alt="必須" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-eio="l" />
                                                         </noscript>
                                                         <font style="vertical-align: inherit;">
-                                                            <font style="vertical-align: inherit;">địa chỉ email </font>
+                                                            <font style="vertical-align: inherit;">{{ __("Email address") }} </font>
                                                         </font>
                                                     </legend>
                                                     <p>
@@ -88,23 +88,23 @@
                                                     </p>
                                                     <p>
                                                         <font style="vertical-align: inherit;">
-                                                            <font style="vertical-align: inherit;">Nhập lại địa chỉ email</font>
+                                                            <font style="vertical-align: inherit;">{{ __("Re-enter your email address") }}</font>
                                                         </font>
                                                         <br>
                                                         <span class="wpcf7-form-control-wrap" data-name="your-email_confirm">
-                                                           <input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Vui lòng nhập lại để xác nhận" value="" type="email" name="your-email_confirm">
+                                                           <input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="{{ __("Please enter it again to confirm") }}" value="" type="email" name="your-email_confirm">
                                                         </span>
                                                     </p>
                                                 </fieldset>
                                             </section>
                                             <section>
                                                 <p>
-                                                    <img decoding="async" src="./assets/images/mfp_must.svg" alt="Yêu cầu" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/mfp_must.svg" class=" ls-is-cached lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
+                                                    <img decoding="async" src="./assets/images/mfp_must.svg" alt="Request" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-src="./assets/images/mfp_must.svg" class=" ls-is-cached lazyloaded" data-eio-rwidth="40" data-eio-rheight="21">
                                                     <noscript>
                                                         <img decoding="async" src="./assets/images/mfp_must.svg" alt="必須" width="40px" height="21px" style="margin-right:5px; vertical-align: middle;" data-eio="l" />
                                                     </noscript>
                                                     <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Các câu hỏi, yêu cầu, v.v.</font>
+                                                        <font style="vertical-align: inherit;">{{ __("Questions, requests, etc.") }}</font>
                                                     </font>
                                                     <br>
                                                     <span class="wpcf7-form-control-wrap" data-name="your-message">
@@ -118,7 +118,7 @@
                                                          <span style="color:#ff0000;">
                                                            <i class="fas fa-exclamation-triangle"></i>
                                                            <font style="vertical-align: inherit;">
-                                                             <font style="vertical-align: inherit;">Kiểm tra!</font>
+                                                             <font style="vertical-align: inherit;">{{ __("Check!") }}</font>
                                                            </font>
                                                          </span>
                                                     </legend>
@@ -134,7 +134,7 @@
                                                         </label>
                                                         <span class="t_block">
                                                            <font style="vertical-align: inherit;">
-                                                             <font style="vertical-align: inherit;">Vui lòng đánh dấu vào ô nếu thông tin trên là chính xác.</font>
+                                                             <font style="vertical-align: inherit;">{{ __("If there are no errors in the above information, please check the box.") }}</font>
                                                            </font>
                                                          </span>
                                                     </p>
@@ -144,7 +144,7 @@
                                                 <p>
                                                     <font style="vertical-align: inherit;">
                                                         <font style="vertical-align: inherit;">
-                                                            <input class="wpcf7-form-control wpcf7-submit has-spinner btn btn-primary" type="submit" value="gửi" disabled="">
+                                                            <input class="wpcf7-form-control wpcf7-submit has-spinner btn btn-primary" type="submit" value="{{ __("Send") }}" disabled="">
                                                         </font>
                                                     </font>
                                                     <span class="wpcf7-spinner"></span>

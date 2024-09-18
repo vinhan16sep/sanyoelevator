@@ -6,7 +6,7 @@
 
 @section('content')
 
-@include('components.breadcrumb', ['title' => 'About'])
+@include('components.breadcrumb', ['title' => __("About Us")])
 <br>
 <div class="section siteContent">
     <div class="container">
