@@ -30,6 +30,7 @@
                             <li id="menu-item-558" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{ route('business') }}/#trengths">{{ __("Our Strengths") }}</a></li>
                         </ul>
                     </li>
+                    <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-url" href="{{ route('part') }}"><strong class="gMenu_name">{{ __("Check Product") }}</strong></a></li>
                     <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-url" href="{{ route('contact') }}"><strong class="gMenu_name">{{ __("Inquiry") }}</strong></a></li>
                     <li class="menu-item menu-item-gtranslate menu-item-has-children notranslate">
                         <a href="#" class="gt-current-wrapper notranslate glink nturl gt_raw_link-xxjexk">

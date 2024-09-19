@@ -28,7 +28,7 @@ class PartController extends Controller
         $part = PartSerial::where(['secret' => $request->secret, 'serial' => $request->serial])->with('part')->first();
 
         return view('part', [
-            'part' => $part
+            'part' => $part ?? NULL
         ]);
     }
 }
