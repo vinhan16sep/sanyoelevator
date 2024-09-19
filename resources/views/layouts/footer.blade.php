@@ -41,7 +41,7 @@
                 <a href="{{ route('products') }}">{{ __("Product Introduction") }}</a>
                 <span class="acc-btn acc-btn-open"></span>
                 <ul class="sub-menu acc-child-close">
-                    
+
                     @foreach ($activedProductCategories as $item)
                     <li id="menu-item-369" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{ route('products')  }}/#{{ $item['slug'] }}">{{ $item["title_$language"] }}</a></li>
                     @endforeach
@@ -57,6 +57,7 @@
                     <li id="menu-item-558" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-558"><a href="{{ route('business') }}/#trengths">{{ __("Our Strengths") }}</a></li>
                 </ul>
             </li>
+            <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="{{ route('part') }}">{{ __("Check Product") }}</a></li>
             <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="{{ route('contact') }}">{{ __("Inquiry") }}</a></li>
             <li class="menu-item menu-item-gtranslate menu-item-has-children notranslate">
                 <a href="#" data-gt-lang="ja" class="gt-current-wrapper notranslate glink nturl gt_raw_link-xxjexk" title="Japanese">

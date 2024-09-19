@@ -3,27 +3,17 @@
 @section('meta_title', __("Check Product"))
 @section('meta_keyword', __("Check Product"))
 @section('meta_description', __("Check Product"))
-<style>
-    .check-product::placeholder  {
-        font-weight: 500;
-        color: #606060 !important;
-    }
-</style>
+
 
 @section('content')
-    <div role="main" class="main">
-        <section class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7" style="background-image: url(img/page-header/page-header-background-transparent-2.jpg);">
+    @include('components.breadcrumb', ['title' => __("Check Product")])
+    <div role="main" class="main box-check-product">
+        <section class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7" style="background-image: url(img/page-header/page-header-background-transparent-2.jpg);background-size: cover;padding: 80px 0;">
             <div class="container">
                 <div class="row mt-5">
                     <div class="col-md-12 align-self-center p-static order-2 text-center">
                         <h1 class="text-9 font-weight-bold">{{ __("Check Product") }}</h1>
                         <span class="sub-title">{{ __("Driving Innovation for a Brighter Tomorrow") }}</span>
-                    </div>
-                    <div class="col-md-12 align-self-center order-1">
-                        <ul class="breadcrumb breadcrumb-light d-block text-center">
-                            <li><a href="#">{{ __("Home") }}</a></li>
-                            <li class="active">{{ __("Check Product") }}</li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -43,14 +33,16 @@
                                 <input class="form-control mb-2 check-product" value="{{ request("serial") }}" name="serial" placeholder="{{ __("Serial number/model") }}">
                             </div>
                             <div class="col-md-1">
-                                <button type="submit" class="w-100 mb-2 btn btn-primary button-search"><i class="fa fa-search"></i></button>
+                                <button type="submit" class="w-100 mb-2 btn btn-primary button-search">
+                                    <svg style="fill: aliceblue;height: 24px;" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/></svg>
+                                </button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-            
-            @if (!empty($part) && !empty($part->part))
+
+            @if (!empty($part))
                 <div class="row">
                     <div class="col">
                         <hr class="solid my-5">
@@ -59,56 +51,49 @@
 
                 <div class="row">
                     <div class="col-md-7 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorter">
-                        <div class="row products product-thumb-info-list lightbox" data-plugin-masonry  data-plugin-masonry data-plugin-options="{'layoutMode': 'fitRows', 'delegate': 'a.img-thumbnail', 'type': 'image', 'gallery': {'enabled': true}}">
-                            <a class="d-inline-block img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon mb-1 me-1" href="{{ getImage($part->part->image) }}" >
-                                <img class="img-fluid" src="{{ getImage($part->part->image) }}" alt="{{ $part->part->title }}">
+                        <div style="border: 1px solid #ccc;" class="products product-thumb-info-list lightbox" data-plugin-masonry  data-plugin-masonry data-plugin-options="{'layoutMode': 'fitRows', 'delegate': 'a.img-thumbnail', 'type': 'image', 'gallery': {'enabled': true}}">
+                            <a href="{{ getImage("images/no-image-icon-23483.png") }}" rel="lightbox[16]"><img fetchpriority="high" decoding="async" src="{{ getImage("images/no-image-icon-23483.png") }}" alt="{{ "TITLE" }}" width="476" height="1024" class="aligncenter size-large wp-image-147 lazyautosizes ls-is-cached lazyloaded">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-5 order-2">
                         <div class="overflow-hidden">
-                            <h2 class="text-color-dark font-weight-bold text-8 mb-0 pt-0 mt-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">{{ $language == 'en' ? $part->part->title_en : $part->part->title_jp }}</h2>
+                            <h2 class="text-color-dark font-weight-bold text-8 mb-0 pt-0 mt-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">{{ "TITLE"  }}</h2>
                         </div>
-                        
+
                         <table class="table table-striped">
                             <tbody>
                               <tr>
                                 <th scope="row">{{ __("Type") }}</th>
-                                <td>{{ $part->part->type }}</td>
+                                <td>{{ "TYPE" }}</td>
                               </tr>
-                              @if ($part->part->load != "")
                               <tr>
                                 <th scope="row">{{ __("Load") }}</th>
-                                <td>{{ $part->part->load }}</td>
+                                <td>{{ "LOAD" }}</td>
                               </tr>
-                              @endif
-                              @if ($part->part->speed != "")
                               <tr>
                                 <th scope="row">{{ __("Speed") }}</th>
-                                <td>{{ $part->part->speed }}</td>
+                                <td>{{ "SPEED" }}</td>
                               </tr>
-                              @endif
-                              @if ($part->part->power != "")
                               <tr>
                                 <th scope="row">{{ __("Power") }}</th>
-                                <td>{{ $part->part->power }}</td>
+                                <td>{{ "POWER" }}</td>
                               </tr>
-                              @endif
                               <tr>
                                 <th scope="row">{{ __("Serial Number") }}</th>
-                                <td>{{ $part->serial }}</td>
+                                <td>{{ "SERIAL NUMBER" }}</td>
                               </tr>
                               <tr>
                                 <th scope="row">{{ __("CQ Number") }}</th>
-                                <td>{{ $part->part->qc_number }}</td>
+                                <td>{{ "CQ NUMBER"  }}</td>
                               </tr>
                               <tr>
                                 <th scope="row">{{ __("Inspection Date") }}</th>
-                                <td>{{ $part->part->date }}</td>
+                                <td>{{ "INSPECTION DATE" }}</td>
                               </tr>
                             </tbody>
                         </table>
-                        {!! nl2br($part->part->description) !!}
+                        {!! nl2br("DESCRIPTION...") !!}
                         <div>
                             <hr class="solid my-5">
                         </div>
@@ -135,8 +120,4 @@
             <br>
         </div>
     </div>
-@endsection
-
-@section('script')
-    <script src="{{ asset('js/examples/examples.lightboxes.js') }}"></script>
 @endsection
